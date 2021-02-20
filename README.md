@@ -1,6 +1,5 @@
 # Tweets Search Engine
-###################################
-
+*******************************
 This project includes a search engine from A to B.
 The search engine includes all the components of a real search engine: inverted index, postings, parser etc.
 ##################################
