@@ -9,7 +9,7 @@ The search engine includes all the components of a real search engine: inverted 
 
 _The search method that was used is the GloVe method_ 
 The GloVe model was trained with a corpus of 10000000 tweets about Corona virus. The trained model is in the folder 'model'.
-_For more information about the GloVe model please refer to: https://github.com/stanfordnlp/GloVe
+_For more information about the GloVe model please refer to: https://github.com/stanfordnlp/GloVe_
 
 ********************************
 
@@ -23,4 +23,4 @@ To run the search engine:
 The merger module is implementing the BSBI algorithm to merge posting files.
 It is not used in the corrent project but you can use see how it implemented and use it in your project.
 _For more information about the BSBI algorithm please refer to:
-https://nlp.stanford.edu/IR-book/html/htmledition/blocked-sort-based-indexing-1.html#:~:text=BSBI%20%28i%29%20segments%20the%20collection%20into%20parts%20of,the%20pairs%20in%20memory%20until%20a%20block%20
+https://nlp.stanford.edu/IR-book/html/htmledition/blocked-sort-based-indexing-1.html#:~:text=BSBI%20%28i%29%20segments%20the%20collection%20into%20parts%20of,the%20pairs%20in%20memory%20until%20a%20block%20_
