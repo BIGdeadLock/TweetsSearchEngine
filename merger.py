@@ -45,7 +45,6 @@ class Merger:
             for key in set(self.dict1.keys()).intersection(set(self.dict2.keys())):
                 merged_dict[key]['docs'] = merged_dict[key]['docs'] + self.dict1[key]['docs']
                 merged_dict[key]['df'] = merged_dict[key]['df'] + self.dict1[key]['df']
-                self.calculate_doc_weight(merged_dict, key)
 
             self.queue.put(merged_dict)
 
@@ -65,16 +64,4 @@ class Merger:
             obj = utils.get_next(file_handle)
         utils.close_file(file_handle)
 
-    def calculate_doc_weight(self, merged_dict, key):
-        for i in range(len(merged_dict[key]['docs'])):
-            term_tf = merged_dict[key]['docs'][i][1]
-            doc_len = merged_dict[key]['docs'][i][2]
-            term_df = merged_dict[key]['df']
-            doc_id = merged_dict[key]['docs'][i][0]
-            max_tf = self.docs_file[doc_id][1]
-            term_idf = math.log10(self.corpus_size / term_df)
-            # save term's idf
-            merged_dict[key]['idf'] = term_idf
-            # calculate doc's total weight
-            self.docs_file[doc_id][0] += 0.8 * (term_tf / max_tf) * term_idf + 0.2 * (term_tf / doc_len) * term_idf
-            self.docs_file[doc_id][0] = round(self.docs_file[doc_id][0], 3)
+
