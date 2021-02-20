@@ -14,8 +14,10 @@ _For more information about the GloVe model please refer to: https://github.com/
 ********************************
 
 To run the search engine:
-  1) In the main you can change the query that will be searched. There is a list of queries in the queries.txt file
-  2) Run the main module to start the program
+  1) Install all the requiments in the requiments.txt
+  2) Run the setup module
+  3) In the main you can change the query that will be searched. There is a list of queries in the queries.txt file
+  4) Run the main module to start the program
 
 ********************************
 The merger module is implementing the BSBI algorithm to merge posting files.
