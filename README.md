@@ -8,7 +8,7 @@ The search engine includes all the components of a real search engine: inverted 
 ********************************
 
 _The search method that was used is the GloVe method_ 
-The GloVe model was trained with a corpus of 10000000 tweets about Corona virus and the trained model is in the model folder.
+The GloVe model was trained with a corpus of 10000000 tweets about Corona virus. The trained model is in the folder 'model'.
 _For more information about the GloVe model please refer to: https://github.com/stanfordnlp/GloVe
 
 ********************************
