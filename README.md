@@ -22,7 +22,7 @@ To run the search engine:
 
 ********************************
 The merger module is implementing the BSBI algorithm to merge posting files.
-It is not used in the current project but you can use see how it's implemented and use it in your project.
+It is not used in the current project but you can use see how it's implemented and use it in your own project.
 
 _For more information about the BSBI algorithm please refer to:
 https://nlp.stanford.edu/IR-book/html/htmledition/blocked-sort-based-indexing-1.html#:~:text=BSBI%20%28i%29%20segments%20the%20collection%20into%20parts%20of,the%20pairs%20in%20memory%20until%20a%20block%20_
